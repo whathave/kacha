@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y bindscrolltolower="lower" style="height: {{cilentHeight}}px" lower-threshold="100">
+  <view class='userInfo flexContainer' style="background-image:url('{{userBg}}')">
+   <view class="icon" style="background-image:url('{{userInfo.icon}}')"></view>
+   <view class='userName'>{{userInfo.name}}</view>
+   <view class='description'>{{userInfo.description}}</view>
+  </view>
+  <ul>
+   <li wx:for="{{picList}}" wx:for-item="item" wx:key="{{item.post_id}}" class="item">
+   <b wx:if="{{item.images.length>1}}">{{item.images.length}}</b>
+     <a bindtap="imgPreview" data-src="{{item.image_srcs}}" style="background-image:url('{{item.image_srcs[0]}}')"></a>
+   </li>
+   </ul>
+</scroll-view>

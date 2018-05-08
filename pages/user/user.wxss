@@ -1,0 +1,50 @@
+/**list.wxss**/
+.userInfo{
+  height: 458rpx;
+  margin-bottom: 6rpx;
+  color: #FFF;
+  padding: 20rpx;
+  text-align: center;
+  background-size: cover;
+}
+.userInfo .icon{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  background-size: 128rpx 128rpx;
+}
+.userInfo .userName{
+  font-size: 36rpx;
+  margin: 10rpx 0;
+}
+.userInfo .description{
+  font-size: 26rpx;
+}
+.item{
+  float: left;
+  position: relative;
+  height: 280rpx;
+  width: 372rpx;
+  margin-bottom: 6rpx;
+}
+.item:nth-child(2n){
+  margin-left: 6rpx;
+}
+.item a{
+  display: block;
+  margin-bottom: 2px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+}
+.item b{
+  font-size: 10px;
+  position: absolute;
+  left: 10rpx;
+  top: 10rpx;
+  color: #FFF;
+  z-index: 99999999;
+}

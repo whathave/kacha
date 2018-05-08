@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/jx/jx",
+    "pages/rm/rm",
+    "pages/rx/rx",
+    "pages/fg/fg",
+    "pages/user/user",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#333",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle ": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#666666",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "/static/images/jxs.png",
+        "iconPath": "/static/images/jx.png",
+        "pagePath": "pages/jx/jx",
+        "text": "精选"
+      },
+      {
+        "selectedIconPath": "/static/images/jzs.png",
+        "iconPath": "/static/images/jz.png",
+        "pagePath": "pages/rm/rm",
+        "text": "建筑"
+      },
+      {
+        "selectedIconPath": "/static/images/rxs.png",
+        "iconPath": "/static/images/rx.png",
+        "pagePath": "pages/rx/rx",
+        "text": "人像"
+      },
+      {
+        "selectedIconPath": "/static/images/fgs.png",
+        "iconPath": "/static/images/fg.png",
+        "pagePath": "pages/fg/fg",
+        "text": "风光"
+      },
+      {
+        "selectedIconPath": "/static/images/wds.png",
+        "iconPath": "/static/images/wd.png",
+        "pagePath": "pages/user/user",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<scroll-view class="container" scroll-y bindscrolltolower="lower" style="height: {{cilentHeight}}px" lower-threshold="200">
+  <ul>
+   <li wx:for="{{picList}}" wx:for-item="item" wx:key="{{item.post_id}}" style="width:{{item.images[0].width*170/item.images[0].height}}px;" class="item"  wx:if="{{item.images.length}}">
+     <b wx:if="{{item.images.length>1}}">{{item.images.length}}</b>
+     <a bindtap="imgPreview" data-src="{{item.images}}" style="background-image:url('https://photo.tuchong.com/{{item.images[0].user_id}}/g/{{item.images[0].img_id}}.jpg')"></a>
+   </li>
+   </ul>
+</scroll-view>

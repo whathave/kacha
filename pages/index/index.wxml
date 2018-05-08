@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}">
+    <block wx:for="{{picList}}" wx:key="item.post_id"  wx:if="{{item.images[0].user_id}}">
+      <swiper-item>
+        <view style="background-image:url('https://photo.tuchong.com/{{item.images[0].user_id}}/f/{{item.images[0].img_id}}.jpg')" class="slide-image"></view>
+        <view class='image-info'>
+          <view class='title'><text>{{item.title}}</text></view>
+          <view class='author'><text>@{{item.site.name}}</text></view>
+          <a class="user-motto" bindtap="goUser">跳过 {{countDown}}s</a>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
